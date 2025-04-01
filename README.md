@@ -27,5 +27,5 @@
 
 ---
 
-Made with ❤️ by **Dawn Izach**
+Made by **Dawn Izach**
 

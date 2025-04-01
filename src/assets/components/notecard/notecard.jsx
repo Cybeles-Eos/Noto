@@ -151,13 +151,12 @@ function NoteCard({ title, texts, date, fixDate, words, color, mark, index, dele
                <button onClick={()=>{
                   setOpenDialog(!openDialog);
                   disableOverflow();
-               }} className={`${style.tools_btn} dis_u_drg`}><i>{edit}</i></button>
-               <button onClick={()=>{ markItem(index, !mark) }} className={`${style.tools_btn} dis_u_drg`}><i>{mark ? bookmark_line_on : bookmark_line_off}</i></button>
-               <button onClick={openConfirm} className={`${style.tools_btn} dis_u_drg`}><i>{delete_line}</i></button>
+               }} className={`${style.tools_btn}`}><i className='dis_u_drg'>{edit}</i></button>
+               <button onClick={()=>{ markItem(index, !mark) }} className={`${style.tools_btn}`}><i className='dis_u_drg'>{mark ? bookmark_line_on : bookmark_line_off}</i></button>
+               <button onClick={openConfirm} className={`${style.tools_btn}`}><i className='dis_u_drg'>{delete_line}</i></button>
             </div>
          </div>
 
-         {/* title={title} texts={texts} date={date} fixDate={fixDate} words={words} color={color} index={index} */}
          {openDialog && <UpdateDialog />}
          {openConfirmation && <ConfirmationBox closeDiag={cancelDelete} removeList={deleteThis} />}
       </>
@@ -165,50 +164,3 @@ function NoteCard({ title, texts, date, fixDate, words, color, mark, index, dele
 }
 
 export default NoteCard
-
-/* 
-
-   let [userNewDate, setUserNewDate] = useState(props.date);
-   let [realDate, setRealDate] = useState(props.rDate);
-
-
-   const changeDate = (e)=>{
-      let newDate = e.target.value.split('-');
-      // console.log(newDate)
-      if (!e.target.value) return; // Prevents running with empty input
-
-      let month_text = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      let index = newDate[1] && newDate[1].charAt(0) === '0' ? Number(newDate[1].charAt(1)) : Number(newDate[1] || "1"); 
-      
-      let computedYear = newDate[0];
-      let computedMonth = month_text[index - 1];
-      let computedDay = newDate[2] && newDate[2].charAt(0) == '0' ? newDate[2].charAt(1) : newDate[2];
-      
-      let date = `${computedMonth} ${computedDay}, ${computedYear}`;
-
-      setUserNewDate(date);
-      setRealDate(newDate.join('-'));
-      // console.log(date)
-      // console.log(newDate)
-   }
-
-   .date_con{
-   display: flex;
-   align-items: center;
-   margin-bottom: 10px;
-}
-.date_title{
-   font-family: var(--Sora);
-   font-size: var(--small-font);
-   margin-right: 14px;
-   color: var(--dark);
-}
-.user_date{
-   border-radius: 5px;
-   padding: 2px;
-   font-size: var(--small-font);
-   border: 1px solid var(--d-gray);
-   color: var(--d-gray);
-}
-
-*/

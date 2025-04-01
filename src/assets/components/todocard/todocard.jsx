@@ -75,8 +75,6 @@ function TodoCard(props){
          document.getElementsByTagName('html')[0].style.overflow = "auto";
       }
 
-      //Debug update inputs :
-      //<button onClick={()=>{console.log(userTxt + '\n:' + word_length + '\n:' + props.date + '\n:' + props.rDate)}} style={{width: 'fit-content'}}><small>Debug</small></button>
       return(
          <>
             <div className={`${style_update.input_container} ${style_update.update_dialog}`}>
