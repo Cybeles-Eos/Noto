@@ -151,9 +151,9 @@ function NoteCard({ title, texts, date, fixDate, words, color, mark, index, dele
                <button onClick={()=>{
                   setOpenDialog(!openDialog);
                   disableOverflow();
-               }} className={style.tools_btn}><i>{edit}</i></button>
-               <button onClick={()=>{ markItem(index, !mark) }} className={style.tools_btn}><i>{mark ? bookmark_line_on : bookmark_line_off}</i></button>
-               <button onClick={openConfirm} className={style.tools_btn}><i>{delete_line}</i></button>
+               }} className={`${style.tools_btn} dis_u_drg`}><i>{edit}</i></button>
+               <button onClick={()=>{ markItem(index, !mark) }} className={`${style.tools_btn} dis_u_drg`}><i>{mark ? bookmark_line_on : bookmark_line_off}</i></button>
+               <button onClick={openConfirm} className={`${style.tools_btn} dis_u_drg`}><i>{delete_line}</i></button>
             </div>
          </div>
 

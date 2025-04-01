@@ -1,12 +1,31 @@
-# React + Vite
+# Noto 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Noto** is a sleek and intuitive web application for managing notes and to-do lists. Easily create, edit, mark, and pin tasks to stay organized efficiently.
 
-Currently, two official plugins are available:
+![Noto Screenshot](./src/assets/images/Pips.png)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 📝 **Create & Edit Notes** – Quickly jot down ideas or to-dos.
+- 📌 **Pin Important Notes** – Keep crucial tasks at the top.
+- ✅ **Mark as Done** – Stay on track by checking off completed tasks.
+- 🎨 **Minimal & Clean UI** – Designed for focus and productivity.
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
+1. Clone the repository:
+2. Navigate to the project folder:
+3. Install dependencies:
+4. Start the development server:
+   ```sh
+   git clone https://github.com/yourusername/noto.git
+   cd noto
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 📷 Noto dashboard view
+![Dashboard](./src/assets/images/Noto_wide.png)  
+
+---
+
+Made with ❤️ by **Dawn Izach**
+
