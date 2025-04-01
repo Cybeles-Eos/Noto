@@ -1,0 +1,217 @@
+
+.main{
+   max-width: 1500px;
+   margin: 1rem auto;
+   margin-bottom: 3rem !important;
+   padding: 13px;
+}
+
+.introduction{
+   width: 100%;
+   padding: 3rem 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.title{
+   font-size: 4.8rem;
+   text-align: center;
+   margin: 5rem 0 1rem 0;
+   line-height: 82px;
+   color: var(--TextColor);
+   max-width: 800px;
+   opacity: 0;
+}
+.label{
+   color: var(--TextColor);
+   text-align: center;
+   margin-top: 1rem;
+   line-height: 25px;
+   font-size: var(--medium-font);
+   font-family: var(--Sora);
+   max-width: 580px;
+   animation-delay: 100ms;
+   opacity: 0;
+}
+.buttons_con{
+   margin-top: 2.5rem;
+   display: flex;
+   gap: 1rem;
+   animation-delay: 200ms;
+   opacity: 0;
+}
+.btn{
+   width: 9.8rem;
+   height: 2.7rem;
+   border-radius: 50rem;
+   cursor: pointer;
+   font-family: var(--Sora);
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-size: var(--medium-font);
+   border: 1px solid var(--TextColor);
+   color: var(--TextColor);
+   background-color: transparent;
+}
+
+
+
+
+
+.features_log{
+   max-width: 1100px;
+   margin: 6rem auto 4rem auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2rem;
+}
+.feat_box{
+   padding: 1rem;
+}
+.feat_title{
+   font-size: 1.5rem;
+   text-align: center;
+   margin: 1rem 0 2rem 0;
+   font-weight: 400;
+   color: var(--TextColor);
+}
+.feat_text{
+   margin: 0 auto;
+   font-size: .97rem;
+   line-height: 23px; 
+   color: var(--TextColor); 
+   text-align: justify;
+   text-align-last: center;
+   letter-spacing: .2px;
+}
+
+@media screen and (max-width: 600px){
+   .features_log{
+      grid-template-columns: 1fr;
+      gap: 2rem;
+   }
+   .feat_box{
+      padding: .1rem;
+   }
+   .feat_title{
+      font-size: 1.25rem;
+      margin: 1rem 0 1.7rem 0;
+      text-align: start;
+   }
+   .feat_text{
+      font-size: .80rem; 
+      text-align-last: auto;
+   }
+}
+
+@media screen and (max-width: 1400px) {
+   .main{
+      margin: 1rem 1.5rem;
+   }
+   .title{
+      font-size: 4.1rem;
+      margin: 2rem 0 1rem 0;
+      line-height: 65px;
+      max-width: 700px;
+   }
+   .label{
+      margin-top: .8rem;
+      line-height: 25px;
+      font-size: var(--medium-font);
+      max-width: 530px;
+   }
+   .buttons_con{
+      margin-top: 2.3rem;
+   }
+   .btn{
+      width: 8.5rem;
+      height: 2.5rem;
+      letter-spacing: .5px;
+      font-size: var(--small-font);
+   }
+   .feat_text{
+      font-size:var(--medium-font);
+      letter-spacing: .1px;
+   }
+}
+
+@media screen and (max-width: 880px) {
+   .title{
+      font-size: 3.5rem;
+      text-align: center;
+      margin: 3rem 0 .9rem 0;
+      line-height: 60px;
+      max-width: 600px;
+   }
+   .label{
+      text-align: center;
+      margin-top: .9rem;
+      font-size: var(--medium-font);
+      max-width: 480px;
+   }
+   .buttons_con{
+      margin-top: 1.8rem;
+      display: flex;
+      gap: 1rem;
+   }
+   .btn{
+      width: 9rem;
+      height: 2.6rem;
+      font-size: var(--small-font);
+   }
+} 
+
+@media screen and (max-width: 600px){
+   .main{
+      margin: 1rem;
+      margin-bottom: 4rem;
+   }
+   .introduction{
+      width: 100%;
+      padding: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+   }
+   .title{
+      font-size: 2.8rem;
+      margin: 2.4rem 0 .9rem 0;
+      line-height: 47px;
+      text-align: start;
+   }
+   .label{
+      text-align: start;
+      margin-top: .9rem;
+      font-size: var(--small-font);
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .main{
+      padding: 0;
+      margin: 1.1rem;
+   }
+   .title{
+      font-size: 2.2rem;
+      margin: 2rem 0 .9rem 0;
+      line-height: 40px;
+      break-inside: auto;
+   }
+   .label{
+      text-align: start;
+      margin-top: .9rem;
+      font-size: var(--small-font);
+   }
+
+   .buttons_con{
+      margin-top: 2rem;
+      gap: .7rem;
+   }
+   .btn{
+      width: 7.8rem;
+      height: 2.4rem;
+      font-size: var(--xSmall-font);
+   }
+}

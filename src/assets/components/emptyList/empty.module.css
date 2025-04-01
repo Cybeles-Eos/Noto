@@ -1,0 +1,19 @@
+.noList{
+   height: 70vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   
+   position: absolute;
+   inset: 0;
+}
+.image{
+   height: 20rem;
+}
+
+@media screen and (max-width: 480px) {
+   .image{
+      height: 15rem;
+   }
+}

@@ -1,0 +1,95 @@
+.input_container{
+   position: absolute;
+   inset: 0;
+   background-color: var(--faded);
+   z-index: 200;
+   display: flex;
+   justify-content: center;
+   padding-top: 4rem;
+}
+.update_dialog{
+   position: fixed !important;
+}
+.input_body{
+   width: 500px;
+   height: fit-content;
+   background-color: var(--white);
+   border-radius: 10px;
+   padding: 14px 12px;
+
+   margin-inline: 1rem;
+   display: flex;
+   flex-direction: column;
+}
+.user_inp{
+   border: 1px solid var(--gray);
+   padding: 8px;
+   width: 100%;
+   height: 5.5rem;
+   resize: none;
+   border-radius: 6px;
+   outline: none;
+   font-size: var(--medium-font);
+   font-family: var(--Sora);
+   color: var(--dark);
+}
+.user_inp::placeholder{
+   color: var(--shadow);
+}
+.word_count{
+   font-size: var(--xSmall-font);
+   color: var(--d-gray);
+   margin-top: 7px;
+   margin-right: 4px;
+}
+
+.btns{
+   align-self: flex-end;
+   display: flex;
+   gap: .7rem;
+   margin-top: 1rem;
+}
+.btn{
+   width: 5.7rem;
+   height: 2.1rem;
+   border-radius: 6px;
+   border: 1px solid var(--dark);
+   font-size: var(--small-font);
+   letter-spacing: .4px;
+   cursor: pointer;
+}
+.btn:hover{
+   opacity: .9;
+}
+.btn_cancel{
+   color: var(--dark);
+   background-color: transparent;
+}
+.btn_save{
+   background-color: var(--dark);
+   color: var(--white);   
+}
+
+@media screen and (max-width: 480px) {
+   .input_container{
+      padding-top: 6rem;
+   }
+   .input_body{
+      border-radius: 8px;
+      padding: 12px 10px;
+   }
+   .user_inp{
+      padding: 6px;
+      height: 4.6rem;
+      font-size: var(--small-font);
+   }
+   .btns{
+      margin-top: .3rem;
+   }
+   .btn{
+      width: 4.5rem;
+      height: 2rem;
+      font-size: var(--xSmall-font);
+      border-radius: 5px;
+   }
+}

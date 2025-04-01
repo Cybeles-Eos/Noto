@@ -1,0 +1,179 @@
+
+.confirm_box{
+   position: fixed;
+   inset: 0;
+   background-color: var(--faded);
+   z-index: 100;
+}
+
+.confirm_body{
+   max-width: 450px;
+   padding: 1.5rem 17px;
+   border-radius: 10px;
+   background-color: var(--white);
+   margin: 0 auto;
+   margin-top: 104px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;   
+   position: relative;
+}
+
+.logo_body{
+   background-color: var(--white);
+   position: absolute;
+   top: -4rem;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 20px;
+   display: flex;
+   height: 8rem;
+   border-radius: 50rem;
+   justify-content: center;
+   align-items: center;
+}
+.logo_con{
+   width: 5.8rem;
+   height: 5.8rem;
+   background-color: var(--dr-red);
+   border-radius: 50rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-block: 2rem;
+}
+
+
+.text{
+   font-family: var(--Sora);
+   font-size: var(--large-font);
+   color: var(--dark);
+   margin-top: 2.8rem;
+   margin-bottom: 1.3rem;
+   max-width: 350px;
+   text-align: center;
+   line-height: 24px;
+}
+
+.buttons_con{
+   display: flex;
+   gap: 1rem;
+   margin-block: .5rem;
+}
+.btn{
+   /* padding: 12px 1.7rem; */
+   width: 7.2rem;
+   height: 2.9rem;
+   font-size: var(--medium-font);
+   border-radius: 5px;
+   cursor: pointer;
+}
+.cancel{
+   background-color: var(--dark);
+   color: var(--white);
+   border: none;
+}
+.confirm{
+   border: 1px solid var(--dark);
+   background-color: transparent;
+}
+.btn:hover{
+   opacity: .89;
+}
+
+@media screen and (max-width: 1380px) {
+   .confirm_body{
+      max-width: 420px;
+      padding: 1.3rem 15px;
+   }
+   
+   .logo_body{
+      top: -3rem;
+      padding: 15px;
+      height: 7rem;
+   }
+   .logo_con{
+      width: 5.2rem;
+      height: 5.2rem;
+      margin-block: 2rem;
+   }
+   .text{
+      font-size: var(--medium-font);
+      margin-top: 2.6rem;
+      margin-bottom: 1rem;
+      max-width: 320px;
+      line-height: 22px;
+   }
+   .buttons_con{
+      gap: .9rem;
+      margin-block: .4rem;
+   }
+   .btn{
+      width: 6.8rem;
+      height: 2.6rem;
+   }
+}
+
+@media screen and (max-width: 580px){ 
+   .confirm_body{
+      max-width: 350px;
+      padding: 1.2rem 13px;
+      border-radius: 8px;
+      margin-top: 104px;
+
+   }
+   .logo_body{
+      height: 5.8rem;
+      top: -2.6rem;
+      padding: 15px;
+   }
+   .logo_con{
+      width: 4rem;
+      height: 4rem;
+   }
+   .text{
+      font-size: var(--small-font);
+      max-width: 280px;
+      line-height: 20px;
+      margin-top: 2.4rem;
+   }
+   .buttons_con{
+      gap: .85rem;
+      margin-block: .5rem;
+   }
+   .btn{
+      width: 6.2rem;
+      height: 2.4rem;
+      font-size: var(--xSmall-font);
+      border-radius: 4px;
+   }
+}
+@media screen and (max-width: 380px) {
+   .confirm_body{
+      margin-top: 154px;
+      margin-inline: 1rem;
+      padding-inline: 1.3rem;
+   }
+   .text{
+      font-size: var(--xSmall-font);
+      margin-top: 2rem;
+      line-height: 19px;
+   }
+   .buttons_con{
+      gap: .85rem;
+      margin-block: .5rem;
+   }
+   .btn{
+      width: 5rem;
+      height: 2.2rem;
+      font-size: var(--xSmall-font);
+      border-radius: 4px;
+   }
+}
+
+@media screen and (max-width: 260px) {
+   .buttons_con{
+      flex-direction: column;
+   }
+}

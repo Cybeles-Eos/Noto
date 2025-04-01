@@ -1,0 +1,93 @@
+:root {
+   --white: #FFFFFF;
+   --dark: #0C0D0E;
+   --dr-red: #6B0000;
+   --gray: #cecece;
+   --d-gray: #9c9c9c;
+   --shadow: #dbdbdb;
+   --red: #ff2121;
+
+   --todo-gray: #5a5a5a;
+
+   --faded: #0000007c;
+
+   --Inter-Font: "Inter", serif;
+   --Sora: "Sora", sans-serif;
+
+   --xxSmall-font: 0.69rem;
+   --xSmall-font: 0.75rem;
+   --small-font: 0.85rem;
+   --medium-font: 0.90rem;
+   --large-font: 1rem;
+   --xLarge-font: 1.1rem;
+ 
+   --sTitle-size: 1.4rem;
+   --title-size: 1.9rem;
+}
+
+
+[data-themes="light"]{
+   --background: #FFFFFF;
+   --TextColor: #0C0D0E;
+   --dark-theme: #0C0D0E;
+   --gray-card: #dbdbdb;
+}
+[data-themes="dark"]{
+   --background:  #0C0D0E;
+   --TextColor: #e6e6e6;
+   --dark-theme: #FFFFFF;
+   --gray-card: #525252;
+}
+
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: var(--Inter-Font);
+}
+
+.dis_u_drg{
+   user-select: none;
+   -webkit-user-drag: none;
+   -webkit-tap-highlight-color: transparent;
+}
+
+html{
+   background-color: var(--background);
+}
+
+/*Home Btns*/
+.hm_btn:hover{
+   background-color: var(--TextColor) !important;
+   color: var(--background) !important;
+}
+
+.brd_notif{
+   border: 2px solid var(--red) !important;
+}
+
+hr{
+   max-width: 1600px;
+   height: 1px;
+   border: none;
+   background-color: var(--shadow);
+   margin-inline: 1rem;
+   margin-bottom: 2rem;
+}
+
+.animations{
+   animation: showContents .5s ease-out forwards;
+}
+@keyframes showContents{
+   0%{
+      transform: translateY(1rem);
+   }
+   20%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+      transform: translateY(0rem);
+   }
+}

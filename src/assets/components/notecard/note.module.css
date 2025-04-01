@@ -1,0 +1,114 @@
+.note{
+   padding: 20px 30px;
+   border: 1px solid var(--shadow);
+   border-radius: 4px;
+   position: relative;
+}
+
+.note_body{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 3.8rem;
+}
+
+/*SVG bookmark*/
+.mark_fill{
+   position: absolute;
+   height: 3rem;
+   top: -.55rem;
+   left: 0;
+}
+
+
+
+.length_date{
+   color: var(--d-gray);
+   font-size: var(--xxSmall-font);
+   letter-spacing: 2%;
+   align-self: flex-end;
+}
+
+.note_title{
+   margin-top: 1.5rem;
+}
+.title{
+   font-weight: 500;
+   font-size: 1.55rem;
+   letter-spacing: 2%;
+   color: var(--TextColor);
+   font-family: var(--Sora);
+}
+.note_body > hr{
+   width: 100% !important;
+   margin-inline: 0;
+   margin-block: 1.5rem !important;
+}
+
+.note_texts{
+   margin-top: .8rem;
+}
+.text{
+   color: var(--TextColor);
+   font-size: .95rem;
+   line-height: 23px;
+   white-space: pre-wrap; 
+   word-break: break-word;
+   
+}
+
+.tools{
+   position: absolute;
+   width: 9.7rem;
+   height: 3.5rem;
+   background-color: var(--TextColor);
+   right: -1px;
+   bottom: -1px;
+   z-index: 10;
+   border-top-left-radius: 122rem;
+   will-change: transform;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.2rem;
+   padding-left: .7rem;
+   padding-top: 5px;
+}
+
+.tool_svg{
+   cursor: pointer;
+   will-change: transform;
+   transform: translateZ(0);
+}
+
+.tools_btn{
+   background-color: transparent;
+   border: none;
+}
+
+
+@media screen and (max-width: 1410px) {
+   .title{
+      font-size: 1.35rem;
+   }
+   .note_texts{
+      margin-top: .4rem;
+   }
+   .text{
+      font-size: var(--small-font);
+   }
+   .tools{
+      position: absolute;
+      width: 9rem;
+      height: 3.3rem;
+   }
+}
+@media screen and (max-width: 700px){
+
+}
+@media screen and (max-width: 400px){
+   .note{
+      padding: 20px;
+  
+   }
+   
+}

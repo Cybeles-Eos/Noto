@@ -1,0 +1,132 @@
+.input_dialog{
+   position: fixed !important;
+   inset: 0;
+   background-color: var(--faded);
+   z-index: 200;
+   display: flex;
+   justify-content: center;
+   padding-top: 4rem;
+   
+}
+.input_body{
+   width: 500px;
+   height: fit-content;
+   background-color: var(--white);
+   border-radius: 10px;
+   padding: 14px 12px;
+
+   margin-inline: 1rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.inp_title{
+   width: 100%;
+   height: 3rem;
+   border-radius: 5px;
+   border: 1px solid var(--shadow);
+   font-family: var(--Sora);
+   font-size: var(--large-font);
+   padding: 10px;
+   outline: none;
+   margin-bottom: 10px;
+   font-weight: 500;
+}
+.inp_texts{
+   resize: none;
+   width: 100%;
+   height: 8rem;
+   border-radius: 5px;
+   border: 1px solid var(--shadow);
+   padding: 10px;
+   outline: none;
+   font-size: var(--medium-font);
+}
+
+.inp_title::placeholder, .inp_texts::placeholder{
+   color: var(--shadow);
+}
+
+.word_count{
+   font-size: var(--xSmall-font);
+   color: var(--d-gray);
+   margin-top: 7px;
+   margin-right: 4px;
+   align-self: flex-end;
+}
+
+.info_box{
+   display: flex;
+
+   gap: .8rem;
+   align-items: self-start;
+}
+.date_con, .color_con{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+.info_title{
+   font-family: var(--Sora);
+   font-size: var(--small-font);
+   margin-right: 5px;
+   color: var(--dark);
+   margin-bottom: 5px;
+   /* font-style: italic; */
+}
+.inp_date{
+   border-radius: 5px;
+   padding: 0px 5px;
+   height: 1.8rem;
+   font-size: var(--small-font);
+   border: 1px solid var(--d-gray);
+   color: var(--d-gray);
+   cursor: pointer;
+   
+}
+.inp_color{
+   width: 2.7rem;
+   height: 1.8rem;
+   padding: 1px 2px;
+   border-radius: 5px;
+   border: 1px solid var(--d-gray);
+   cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+   border-radius: 3px;
+   border: none;
+   will-change: transform;
+   transform: translateZ(0);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+   padding-left: 0 !important;
+   margin-left: 0 !important;
+}
+
+
+.btns{
+   align-self: flex-end;
+   display: flex;
+   gap: .7rem;
+   margin-top: 1rem;
+}
+.btn{
+   width: 5.7rem;
+   height: 2.1rem;
+   border-radius: 6px;
+   border: 1px solid var(--dark);
+   font-size: var(--small-font);
+   letter-spacing: .4px;
+   cursor: pointer;
+}
+.btn:hover{
+   opacity: .9;
+}
+.btn_cancel{
+   color: var(--dark);
+   background-color: transparent;
+}
+.btn_save{
+   background-color: var(--dark);
+   color: var(--white);   
+}

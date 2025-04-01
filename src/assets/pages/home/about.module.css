@@ -1,0 +1,38 @@
+.about{
+   max-width: 900px;
+   margin: 0 auto;
+   margin-top: 5rem;
+
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 2rem;
+}    
+
+.imageAbt{
+   width: 100%;
+   align-self: center;
+   margin-bottom: 1rem;
+}
+
+.about_title{
+   font-weight: 400;
+   font-size: 1.7rem;
+   color: var(--TextColor);
+   margin: 1.4rem 0;
+}
+.about_text{
+   font-size: .97rem;
+   color: var(--TextColor);
+   line-height: 23px;
+   text-align: justify;
+   letter-spacing: .2px;
+   /* text-align-last: center; */
+   
+}
+
+@media screen and (max-width: 1400px) {
+   .about_text{
+      font-size:var(--medium-font);
+      letter-spacing: .1px;
+   }
+}

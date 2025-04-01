@@ -1,0 +1,118 @@
+
+.nav{
+   max-width: 1700px;
+   height: 4.7rem;
+   margin: 0 auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   padding: 0px 1rem;
+   /* padding-left: 1.4rem; */
+   position: relative;
+}
+.logo{
+   height: 2.5rem;
+   cursor: pointer;
+}
+
+.link_list{
+   display: flex;
+   gap: 2.9rem;
+   align-content: center;
+   justify-content: center;
+   z-index: 200;
+}
+.link_con{
+   list-style: none;
+   align-self: center;
+
+}
+.line{
+   width: 1px;
+   height: 1.3rem;
+   align-self: center;
+   background-color: var(--TextColor);
+   opacity: .5;
+}
+.link{
+   color: var(--TextColor);
+   text-decoration: none;
+   font-size: var(--large-font);
+}
+.switch_mode{
+   width: 3rem;
+   border: none;
+   height: 1.5rem;
+   border-radius: 50px;
+   background-color: var(--dark-theme);
+   position: relative;
+   cursor: pointer;
+
+   will-change: transform;
+   transform: translateZ(0);
+}
+[data-switch-toggle='false']{
+   --light-switch: 4px;
+}
+[data-switch-toggle='true']{
+   --light-switch: 28px;
+}
+.switch_mode > span{
+   display: block;
+   width: 1.1rem;
+   height: 1.1rem;
+   background-color: var(--background);
+   border-radius: 40px;
+   transform: translateX(var(--light-switch));
+   transition: all 200ms;   
+   
+}
+
+
+.menu{
+   display: none;
+}
+
+
+@media screen and (max-width: 1380px){
+   .link{
+      font-size: var(--medium-font);
+   }
+   .logo{
+      height: 2.2rem;
+   }
+}
+@media screen and (max-width: 700px) {
+   .menu{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: block;
+   }
+   [data-menu-toggle='true']{
+      --show: flex;
+   }
+   [data-menu-toggle='false']{
+      --show: none;
+   }
+
+   .link_list{
+      position: absolute;
+      background-color: var(--background);
+      top: 4rem;
+      z-index: 3;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding-block: 3rem;
+      gap: 2.5rem;
+      display: var(--show);
+   }
+   .line{
+      display: none;
+   }
+}
