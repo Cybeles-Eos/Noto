@@ -11,15 +11,21 @@
 - 🎨 **Minimal & Clean UI** – Designed for focus and productivity.
 
 ## 🛠️ Installation
-1. Clone the repository:
-2. Navigate to the project folder:
-3. Install dependencies:
-4. Start the development server:
-   ```sh
+1. Clone the repository.
+2. Navigate to the project folder.
+3. Install dependencies.
+4. Start the development server.
+```sh
    git clone https://github.com/yourusername/noto.git
    cd noto
    npm install
-   ```
+```
+
+## Technologies Used 🛠️
+- React.js ⚛️
+- Vite ⚡
+- CSS Grid 🎨
+- LocalStorage for persistence 💾
 
 
 ## 📷 Noto dashboard view
