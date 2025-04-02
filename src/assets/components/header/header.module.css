@@ -37,7 +37,35 @@
    color: var(--TextColor);
    text-decoration: none;
    font-size: var(--large-font);
+   position: relative;
 }
+.link:active{
+   opacity: .8;
+}
+.link::before, .link::after{
+   content: "";
+   position: absolute;
+   bottom: -4px;
+   height: 1px;
+   width: 0%;
+   transition: 200ms;
+
+   background-color: var(--TextColor);
+
+}
+.link::before{
+   left: -.2rem;
+}
+.link::after{
+   right: -.2rem;
+}
+.link:hover::before{
+   width: 60%;
+}
+.link:hover::after{
+   width: 60%;
+}
+
 .switch_mode{
    width: 3rem;
    border: none;
