@@ -58,6 +58,11 @@ html{
    /* font-size: var(--medium-font); */
 }
 
+body {
+   -webkit-text-size-adjust: 100%;
+}
+
+
 /*Home Btns*/
 .hm_btn:hover{
    background-color: var(--TextColor) !important;
