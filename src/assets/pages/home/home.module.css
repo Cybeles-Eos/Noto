@@ -28,7 +28,7 @@
    text-align: center;
    margin-top: 1rem;
    line-height: 25px;
-   font-size: var(--medium-font);
+   font-size: var(--medium-font) !important;
    font-family: var(--Sora);
    max-width: 580px;
    animation-delay: 100ms;
@@ -78,7 +78,7 @@
 }
 .feat_text{
    margin: 0 auto;
-   font-size: .97rem;
+   font-size: .97rem !important;
    line-height: 23px; 
    color: var(--TextColor); 
    text-align: justify;
@@ -100,7 +100,7 @@
       text-align: start;
    }
    .feat_text{
-      font-size: .80rem; 
+      font-size: .80rem !important;
       text-align-last: auto;
    }
 }
@@ -118,7 +118,7 @@
    .label{
       margin-top: .8rem;
       line-height: 25px;
-      font-size: var(--medium-font);
+      font-size: var(--medium-font) !important;
       max-width: 530px;
    }
    .buttons_con{
@@ -131,7 +131,7 @@
       font-size: var(--small-font);
    }
    .feat_text{
-      font-size:var(--medium-font);
+      font-size:var(--medium-font) !important;
       letter-spacing: .1px;
    }
 }
@@ -147,7 +147,7 @@
    .label{
       text-align: center;
       margin-top: .9rem;
-      font-size: var(--medium-font);
+      font-size: var(--medium-font) !important;
       max-width: 480px;
    }
    .buttons_con{
@@ -184,7 +184,7 @@
    .label{
       text-align: start;
       margin-top: .9rem;
-      font-size: var(--small-font);
+      font-size: var(--small-font) !important;
    }
 }
 
@@ -202,7 +202,7 @@
    .label{
       text-align: start;
       margin-top: .9rem;
-      font-size: var(--small-font);
+      font-size: var(--small-font) !important;
    }
 
    .buttons_con{
@@ -215,7 +215,7 @@
       font-size: var(--xSmall-font);
    }
    .feat_text{
-      line-height: 27px;
+      line-height: 27px !important;
    }
 }
 @media screen and (max-width: 300px){

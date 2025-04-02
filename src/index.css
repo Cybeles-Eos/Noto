@@ -55,7 +55,7 @@
 
 html{
    background-color: var(--background);
-   font-size: var(--medium-font);
+   /* font-size: var(--medium-font); */
 }
 
 /*Home Btns*/
