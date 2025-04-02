@@ -29,7 +29,7 @@
 
 
 ## 📷 Noto dashboard view
-![Dashboard](./src/assets/images/Noto_wide.png)  
+![Dashboard](./src/assets/images/NotoHome.png)  
 
 ---
 
