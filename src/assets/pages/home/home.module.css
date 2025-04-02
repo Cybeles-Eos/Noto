@@ -218,3 +218,8 @@
       line-height: 27px;
    }
 }
+@media screen and (max-width: 300px){
+   .buttons_con{
+      flex-direction: column;
+   }
+}
