@@ -36,3 +36,11 @@
       letter-spacing: .1px;
    }
 }
+@media screen and (max-width: 450px) {
+   .about{
+      padding-bottom: 2rem;
+   }
+   .about_text{
+      line-height: 28px;
+   }
+}

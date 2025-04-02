@@ -94,8 +94,16 @@
       margin-inline: .1rem;
    }
 }
-
-
+@media screen and (max-width: 700px){
+   .list_container{
+      padding-top: .1rem;
+   }
+}
+@media screen and (max-width: 400px) {
+   .header{
+      margin: .85rem;
+   }
+}
 
 
 

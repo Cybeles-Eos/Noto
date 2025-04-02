@@ -113,3 +113,9 @@
       display: none;
    }
 }
+@media screen and (max-width: 400px) {
+   .nav{
+      height: 4.2rem;
+      padding-top: 10px;
+   }
+}

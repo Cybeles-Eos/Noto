@@ -95,3 +95,11 @@
       padding: 10px;
    }
 }
+@media screen and (max-width: 400px) {
+   .notes_container{
+      padding-top: .1rem;
+   }
+   .header{
+      margin: .85rem;
+   }
+}

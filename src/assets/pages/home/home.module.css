@@ -214,4 +214,7 @@
       height: 2.4rem;
       font-size: var(--xSmall-font);
    }
+   .feat_text{
+      line-height: 27px;
+   }
 }

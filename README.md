@@ -33,5 +33,5 @@
 
 ---
 
-Made by **Dawn Izach**
+Made by **Dawn**
 
