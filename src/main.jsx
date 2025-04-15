@@ -2,10 +2,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Routes, Route, HashRouter } from 'react-router-dom'
 
-//Components
+//Components:
 import Header from './assets/components/header/header.jsx'
 
-// Pages
+// Pages:
 import Home from './assets/pages/home/home.jsx'
 import TodoList from './assets/pages/todolist/todo.jsx'
 import PersonalNote from './assets/pages/personalnote/personal.jsx'
